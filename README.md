@@ -1,6 +1,6 @@
 # nodejs-hw
 
-Express server for notes collection.
+Express server for notes with MongoDB.
 
 ## Scripts
 
@@ -11,4 +11,5 @@ npm run dev
 
 ## Env
 
-`PORT` — server port (default 3000)
+- `PORT` — server port (default 3000)
+- `MONGO_URL` — MongoDB connection string
