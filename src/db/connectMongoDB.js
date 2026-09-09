@@ -1,4 +1,7 @@
+import { setDefaultResultOrder } from 'node:dns';
 import mongoose from 'mongoose';
+
+setDefaultResultOrder('ipv4first');
 
 export const connectMongoDB = async () => {
   try {
