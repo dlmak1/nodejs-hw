@@ -9,6 +9,7 @@ import { errorHandler } from './middleware/errorHandler.js';
 import { errors } from 'celebrate';
 import authRoutes from './routes/authRoutes.js';
 import notesRoutes from './routes/notesRoutes.js';
+import userRoutes from './routes/userRoutes.js';
 
 dotenv.config();
 
@@ -21,6 +22,7 @@ app.use(cors());
 app.use(cookieParser());
 
 app.use(authRoutes);
+app.use(userRoutes);
 app.use(notesRoutes);
 app.use(errors());
 
